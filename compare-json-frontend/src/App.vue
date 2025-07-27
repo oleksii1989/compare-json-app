@@ -34,7 +34,7 @@ const sentSecond = ref(false)
 const loading = ref(false)
 const error = ref('')
 const diff = ref(null)
-const timer = ref(10)
+const timer = ref(30)
 const timerActive = ref(false)
 let timerInterval = null
 
@@ -55,7 +55,7 @@ const sendFirstPayload = async () => {
 
 const startTimer = () => {
   timerActive.value = true
-  timer.value = 10
+  timer.value = 30
   timerInterval = setInterval(() => {
     timer.value--
 
